@@ -67,7 +67,7 @@ function paint(e){
 function clearCells(){
     cells.forEach((cell)=>{
         cell.style.backgroundColor = "white";
-        cell.style.opacity = 0;
+        cell.style.opacity = "1";
     });
 }
 
