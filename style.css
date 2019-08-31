@@ -1,0 +1,13 @@
+.container {
+    display: grid;
+    grid-template: repeat(16,40px) / repeat(16,40px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 2px solid black;
+}
+
+.container div {
+    background-color: white;
+}
