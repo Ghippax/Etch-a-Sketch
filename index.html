@@ -2,15 +2,20 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <title>Etch-a-Sketch</title>
     </head>
     <body>
-        <button class="clear">Clear</button>
-        <input type="number" name="num" value="0">
-        <button class="newGrid">New Grid</button>
-        <input type="color" name="penColor">
+        <h1>Etch-a-Sketch</h1>
+        <button class="clear">Clear Canvas</button>
+        <input type="number" name="num" placeholder="Side Cells">
+        <button class="newGrid">New Canvas</button>
+        <div class="colorPicker">
+            <label>Color</label>
+            <input type="color" name="penColor">
+        </div>
         <input type="radio" name="pen" value="pen">Pen</input>
         <input type="radio" name="pen" value="eraser">Eraser</input>
         <input type="radio" name="pen" value="shade">Grey pen</input>

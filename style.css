@@ -1,13 +1,93 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+body {
+    background: url(http://genchi.info/image/neon-red-background-20.png) no-repeat;
+    color: white;
+    font-family: "Manjari", Arial;
+    font-size: 24px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    margin-top: 48px;
+    margin-bottom: 700px;
+}
+
+button {
+    color: white;
+    background-color: rgb(132, 22, 196);
+    font-family: "Manjari", Arial;
+    font-size: 20px;
+    padding-top: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(111, 21, 163);
+}
+
 .container {
     display: grid;
     grid-template: repeat(16,40px) / repeat(16,40px);
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    border: 2px solid black;
+    top: 15%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    border: 10px solid rgb(132, 22, 196);
+    background-color: white;
 }
 
 .container div {
     background-color: white;
+}
+
+.clear {
+    position: absolute;
+    top: 15%;
+    left: 68%;
+}
+
+.newGrid {
+    position: absolute;
+    top: 20%;
+    left: 74%;
+}
+
+.colorPicker {
+    position: absolute;
+    top: 25%;
+    left: 68%;
+}
+
+[type="radio"] {
+    margin: 0px 25px;
+}
+
+[type="color"] {
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgb(132, 22, 196);
+    width: 120px;
+    height: 30px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+[type="number"] {
+    -moz-appearance:textfield;
+    position: absolute;
+    top: 20%;
+    left: 68%;
+    font-family: "Manjari", Arial;
+    font-size: 20px;
+    padding-top: 5px;
+    border: 2px solid rgb(132, 22, 196);
+    border-radius: 5px;
+    width: 5%;
 }
